@@ -5,6 +5,7 @@ import 'vis-timeline/styles/vis-timeline-graph2d.min.css';
 import { useItemsStore } from '../../store/useItems';
 import type { Item } from '../../types/types';
 import { useGraph } from '../../hooks/useGraph';
+import './vis.scss';
 
 export const ItemGraph = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -61,7 +62,7 @@ export const ItemGraph = () => {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h3>График данных из Zustand</h3>
+      <h3>Графическое представление</h3>
       <div
         ref={containerRef}
         style={{ border: '1px solid #ddd', borderRadius: '4px' }}

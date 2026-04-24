@@ -16,8 +16,9 @@ ul {
     & .controls {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 24px;
+      padding-inline: 20px;
     }
 }
 

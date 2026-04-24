@@ -16,7 +16,7 @@ export const GraphTable = ({ data }: Props) => {
   return (
     <div>
       <div className={styles.controls}>
-        <h2>Graph</h2>
+        <h3>Табличное представление</h3>
         <Tooltip label="Добавить item">
           <ActionIcon variant="filled" color="indigo" aria-label="Add">
             <PlusIcon size={32} color={mainColor} />
