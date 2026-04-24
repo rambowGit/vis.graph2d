@@ -1,3 +1,43 @@
+ul {
+  list-style-type: none;
+  padding-inline: 24px;
+}
+
 .root {
-    background-color: brown;
+    background-color: rgb(69, 83, 99);
+    width: 1200px;
+    min-height: 800px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    & .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 6px;
+  border-bottom: 1px solid gray;
+  
+  &:hover {
+    background-color: rgb(93, 104, 117);
+  }
+
+  & .data {
+    padding-inline: 4px;
+    min-width: 140px;
+  }
+
+  & .btnDecriment {
+    margin-right: 30px;
+  }
 }

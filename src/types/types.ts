@@ -1,4 +1,1 @@
-export type ItemData = { x: string; y: number };
-export interface IData {
-  items: ItemData[];
-}
+export type Item = { id: string; x: string; y: number };
